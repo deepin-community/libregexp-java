@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with maven-repo-helper
+
+override_dh_auto_build:
+	dh_auto_build -- jar javadocs
+
+get-orig-pom:
+	wget -O debian/pom.xml http://repository.sonatype.org/service/local/repositories/central/content/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.pom
+	sed -i -e 's/<version>1.4/<version>1.5/' debian/pom.xml
+
+get-orig-source:
+	-uscan --download-current-version --force-download --rename

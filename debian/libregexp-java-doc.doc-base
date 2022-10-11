@@ -1,0 +1,9 @@
+Document: libregexp-java-doc
+Title: Programmer API for libregexp-java
+Author: Apache regexp developers
+Abstract: Javadocs API for the regular expression library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libregexp-java/api/index.html
+Files: /usr/share/doc/libregexp-java/api/*.html

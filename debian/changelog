@@ -1,0 +1,182 @@
+libregexp-java (1.5-4) unstable; urgency=medium
+
+  * Team upload.
+  * Removed Michael Koch from the uploaders (Closes: #654092)
+  * Build with the DH sequencer instead of CDBS
+  * Moved the package to Git
+  * Standards-Version updated to 4.1.3
+  * Switch to debhelper level 10
+  * Use a secure URL in debian/watch
+  * Converted debian/copyright to the Copyright Format 1.0
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 12 Jan 2018 12:14:37 +0100
+
+libregexp-java (1.5-3) unstable; urgency=low
+
+  [ Ludovic Claude ]
+  * Change section of libregex-java-doc to doc
+
+  [ Niels Thykier ]
+  * Removed Depends on JREs (Closes: #528306)
+  * Fixed broken Vcs-Browser link.
+
+  [ Torsten Werner ]
+  * Remove Arnaud from Uploaders list.
+  * Switch to source format 3.0.
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 16 Aug 2011 17:40:37 +0200
+
+libregexp-java (1.5-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 09 Aug 2009 12:39:23 +0200
+
+libregexp-java (1.5-1) experimental; urgency=low
+
+  * New upstream version
+  * Add myself to Uploaders
+  * Remove old java1 runtimes from the list of Depends:
+  * Add the Maven POM to the package
+  * Add a Build-Depends-Indep dependency on maven-repo-helper
+  * Update debian/copyright to the machine-readable format.
+  * Put the documentation in a separate package
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Sun, 02 Aug 2009 23:21:23 +0100
+
+libregexp-java (1.4-6) unstable; urgency=low
+
+  [ Matthias Klose ]
+  * Set java source version to 1.4.
+
+  [ Torsten Werner ]
+  * Add myself to Uploaders.
+  * Add missing Depends: ${misc:Depends}.
+  * Switch to debhelper compat level 5.
+  * Add Vcs-* and Homepage headers.
+  * Update Standards-Version: 3.8.2.
+  * Add copyright notice.
+  * Do no longer quote the full text of the Apache license.
+  * Change Section: java.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 02 Aug 2009 23:32:03 +0200
+
+libregexp-java (1.4-5) unstable; urgency=low
+
+  * Build-depend on default-jdk-builddep.
+  * libregexp-java: Depend on default-jre-headless as the preferred runtime,
+    keep the existing alternatives for now.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 05 Aug 2008 00:04:14 +0200
+
+libregexp-java (1.4-4) unstable; urgency=low
+
+  * Use java-gcj-compat instead of kaffe.
+  * Moved Build-Depends-Indep to Build-Depends.
+  * Removed Wolfgang and added myself to Uploaders.
+  * Updated Standards-Version.
+
+ -- Michael Koch <konqueror@gmx.de>  Sun, 17 Jun 2007 21:00:58 +0200
+
+libregexp-java (1.4-3) unstable; urgency=low
+
+  * Removed Takashi Okamoto (closes:#352990).
+  * Added myself.
+
+ -- Arnaud Vandyck <avdyk@debian.org>  Tue, 25 Apr 2006 17:09:42 +0200
+
+libregexp-java (1.4-2) unstable; urgency=low
+
+  * kaffe compiler transition
+
+ -- Wolfgang Baer <WBaer@gmx.de>  Sun, 15 Jan 2006 18:21:14 +0100
+
+libregexp-java (1.4-1) unstable; urgency=low
+
+  * New upstream
+    + Moved package to a non-native format
+    + Updated copyright to Apache 2.0 License
+  * Remove useless README.debian file
+  * Remove useless debhelper files in debian directory
+  * Moved package into pkg-java maintainers as Takashi wants
+    to comaintain his java packages - added Takashi as Uploader
+  * Upgrade build-dependencies and added depends needed by java policy
+  * Build javadocs and register with doc-base - added dirs, docs
+    and doc-base file to debian directory
+  * Standards-Version 3.6.2 (no changes)
+  * Added myself as uploader
+
+ -- Wolfgang Baer <WBaer@gmx.de>  Sun, 18 Sep 2005 20:45:52 +0200
+
+libregexp-java (1.3-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- Takashi Okamoto <tora@debian.org>  Sun, 15 Feb 2004 23:40:09 +0900
+
+libregexp-java (1.2.20010409-5) unstable; urgency=low
+
+  * fixed FTBFS. (closes: #189909)
+
+ -- Takashi Okamoto <tora@debian.org>  Sun, 31 Aug 2003 19:25:19 +0900
+
+libregexp-java (1.2.20010409-4) unstable; urgency=low
+
+  * fixed FTBFS. (closes: #162436)
+
+ -- Takashi Okamoto <tora@debian.org>  Sun, 31 Aug 2003 19:25:06 +0900
+
+libregexp-java (1.2.20010409-3) unstable; urgency=low
+
+  * remove ant dependency.(Closes: #133069)
+
+ -- Takashi Okamoto <tora@debian.org>  Sat,  9 Feb 2002 19:22:43 +0900
+
+libregexp-java (1.2.20010409-2) unstable; urgency=low
+
+  * change Build-Depends to Build-Depends-Indep.
+  * change /usr/share/java/regexp.jar to /usr/share/java/regexp-1.2.jar
+    new regexp.jar is symbolic link in regexp-1.2.jar
+
+ -- Takashi Okamoto <tora@debian.org>  Thu, 17 Jan 2002 17:21:30 +0900
+
+libregexp-java (1.2.20010409-1) unstable; urgency=low
+
+  * new upstream version under development. This version is fixed some
+    bugs.
+
+ -- Takashi Okamoto <tora@debian.org>  Sat,  5 May 2001 12:47:33 +0000
+
+libregexp-java (1.2-4) unstable; urgency=low
+
+  * add final line in debian/copyright
+  * remove bdebstd from debian/rules
+
+ -- Takashi Okamoto <tora@debian.org>  Sat,  3 Mar 2001 13:29:10 +0900
+
+libregexp-java (1.2-3) unstable; urgency=low
+
+  * add sharutils dependency at Build-Depends in debian/control.
+  * use debian package's ant to build.
+  * comment at debian/rules for building API Document because doc++
+    has problem. Remove comments when problem will be fixed.
+
+ -- Takashi Okamoto <tora@debian.org>  Sat,  3 Mar 2001 13:29:10 +0900
+
+libregexp-java (1.2-2) unstable; urgency=low
+
+  * fixed problem at Build-Depends in debian/control.
+
+ -- Takashi Okamoto <tora@debian.org>  Thu,  8 Feb 2001 21:49:08 +0900
+
+libregexp-java (1.2-1) unstable; urgency=low
+
+  * Initial release.
+  * Use Frame Class instead of JFrame Class because debian doesn't have
+    Swing package.
+
+ -- Takashi Okamoto <tora@debian.org>  Tue,  5 Dec 2000 10:01:10 +0000
+
+Local variables:
+mode: debian-changelog
+End:
